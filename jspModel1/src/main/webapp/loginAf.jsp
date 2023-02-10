@@ -19,7 +19,7 @@
 		%>
 		<script type="text/javascript">
 			alert("Welcome <%= mem.getId() %>");
-			//location.href = "";
+			location.href = "./bbslist.jsp";
 		</script>
 		<%	
 	} else {
