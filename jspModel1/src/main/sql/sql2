@@ -1,0 +1,14 @@
+
+
+update bbs
+set step=step+1
+where ref=(select ref from bbs where seq=6)
+	and step>(select step from bbs where seq=65);
+
+insert into bbs(id, ref, step, depth, title, content, wdate, del, readcount)
+values(?, 
+       (select ref from bbs where seq=6),
+       (select step from bbs where seq=6) + 1,
+       (select depth from bbs where seq=6) + 1,
+       ?,?, now(), 0,0);
+	
