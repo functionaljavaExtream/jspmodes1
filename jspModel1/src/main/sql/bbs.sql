@@ -20,3 +20,9 @@ add foreign key(id) references memeber(id);
 
 insert into bbs(id, ref, step, depth, title, content, wdate, del, readcount)
 valuse('id', (select ifnull(max(ref),0)+1, 0, 0,'title', 'content', now(),0,0));
+
+select * from member;
+
+
+delete from bbs
+where seq=37;
