@@ -86,6 +86,10 @@ if((count%10)>0) {
 
 
 <h1>게시판</h1>
+<br>
+	<a href="calendar.jsp">일정관리</a>
+	<hr>
+<br>
 
 <div align="center">
 
