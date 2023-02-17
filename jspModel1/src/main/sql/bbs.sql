@@ -15,7 +15,7 @@ create table bbs(
 
 
 alter table bbs
-add foreign key(id) references memeber(id);
+add foreign key(id) references member(id);
 
 
 insert into bbs(id, ref, step, depth, title, content, wdate, del, readcount)
